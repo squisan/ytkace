@@ -63,7 +63,7 @@ jobs:
       - name: Setup
         run: brew install ldid dpkg
 
-      - name: YouTube
+      - name: "YouTube :3"
         env:
           IPA_URL: ${{ matrix.target.url }}
           GH_TOKEN: ${{ github.token }}
