@@ -15,6 +15,13 @@ def enable_file_access(root: dict) -> None:
         modes.append("audio")
     root["UIBackgroundModes"] = modes
 
+    # Ensure the bundle display name is set so the app appears with the desired name on the
+    # home screen. Fall back to CFBundleName as well for safety.
+    # Note: iOS may truncate long names; keep the string short.
+    display_name = "YouTube :3"
+    root["CFBundleDisplayName"] = display_name
+    root["CFBundleName"] = display_name
+
 
 def main() -> int:
     if len(sys.argv) != 2:
