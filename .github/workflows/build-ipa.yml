@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       ipa_url:
-        description: YouTube IPA URL (iOS 16 base, 21.33.6)
+        description: YouTube :3 IPA URL (iOS 16 base, 21.33.6)
         required: true
         default: "https://www.dropbox.com/scl/fi/1m7rq3lpkg3mfsone2299/com.google.ios.youtube-21.33.6-eeveedecrypter.ipa?rlkey=b2nsvre89881puprynwkfau8q&st=4fkh7ry8&dl=1"
         type: string
       ipa_url_ios17:
-        description: Second YouTube IPA URL (iOS 17+ base, 21.35.3). Leave empty to build one IPA.
+        description: Second YouTube :3 IPA URL (iOS 17+ base, 21.35.3). Leave empty to build one IPA.
         required: false
         default: "https://www.dropbox.com/scl/fi/vtz8kt6qhflo7nniwfa2n/com.google.ios.youtube-21.35.3-eeveedecrypter.ipa?rlkey=qkj32r23mh4axhjvpypd09jsp&st=41a116ab&dl=1"
         type: string
